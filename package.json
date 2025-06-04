@@ -17,6 +17,7 @@
         "provenance": true
     },
     "devDependencies": {
+        "@biomejs/biome": "^1.9.4",
         "@types/node": "^22.15.29",
         "sqlite3": "^5.1.7",
         "ts-node": "^10.9.2",
