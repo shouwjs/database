@@ -1,0 +1,40 @@
+{
+    "$schema": "https://json.schemastore.org/package.json",
+    "name": "shouw.db",
+    "version": "0.0.1",
+    "description": "A database extension for Shouw.js.",
+    "type": "commonjs",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "keywords": ["discord.js", "aoi.js", "shouw.js", "bdfd", "database", "discord", "bot"],
+    "scripts": {
+        "build": "tsc -p tsconfig.json",
+        "dev": "node dist/__test__"
+    },
+    "author": "Tyowk <tyowk@outlook.com>",
+    "license": "Apache-2.0",
+    "publishConfig": {
+        "provenance": true
+    },
+    "devDependencies": {
+        "@types/node": "^22.15.29",
+        "sqlite3": "^5.1.7",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.8.3"
+    },
+    "dependencies": {
+        "reflect-metadata": "^0.2.2",
+        "typeorm": "^0.3.24"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/shouwjs/database.git"
+    },
+    "bugs": {
+        "url": "https://github.com/shouwjs/database/issues"
+    },
+    "files": ["dist", "README.md", "LICENSE"],
+    "engines": {
+        "node": ">=20.x"
+    }
+}
