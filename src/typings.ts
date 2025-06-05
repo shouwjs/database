@@ -8,6 +8,9 @@ export class Main extends BaseEntity {
     @Column({ nullable: false, default: void 0 })
     value!: string;
 
+    @Column({ nullable: false })
+    table!: string;
+
     @Column({ nullable: true })
     user?: string;
 
@@ -63,6 +66,7 @@ export class MongoCooldown extends Cooldown {
 export interface MainData {
     key: string;
     value?: string;
+    table: string;
     user?: string;
     guild?: string;
     channel?: string;

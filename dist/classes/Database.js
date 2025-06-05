@@ -33,6 +33,7 @@ class Database extends Base_1.Base {
     async set(options) {
         const newData = new typings_1.Main();
         newData.key = options.key;
+        newData.table = options.table;
         newData.value = options.value;
         newData.guild = options.guild;
         newData.user = options.user;

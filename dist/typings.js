@@ -23,6 +23,10 @@ __decorate([
     __metadata("design:type", String)
 ], Main.prototype, "value", void 0);
 __decorate([
+    (0, typeorm_1.Column)({ nullable: false }),
+    __metadata("design:type", String)
+], Main.prototype, "table", void 0);
+__decorate([
     (0, typeorm_1.Column)({ nullable: true }),
     __metadata("design:type", String)
 ], Main.prototype, "user", void 0);

@@ -18,6 +18,7 @@ export class Database extends Base {
     public async set(options: MainData): Promise<void> {
         const newData = new Main();
         newData.key = options.key;
+        newData.table = options.table;
         newData.value = options.value as string;
         newData.guild = options.guild;
         newData.user = options.user;

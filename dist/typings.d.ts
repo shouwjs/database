@@ -2,6 +2,7 @@ import { BaseEntity } from 'typeorm';
 export declare class Main extends BaseEntity {
     key: string;
     value: string;
+    table: string;
     user?: string;
     guild?: string;
     channel?: string;
@@ -26,6 +27,7 @@ export declare class MongoCooldown extends Cooldown {
 export interface MainData {
     key: string;
     value?: string;
+    table: string;
     user?: string;
     guild?: string;
     channel?: string;
